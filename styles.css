@@ -1,0 +1,87 @@
+body {
+  font-family: 'Avenir', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #001f4d;
+}
+
+.hero {
+  background: url('IMG_7381 2.JPG') center center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  max-width: 700px;
+  transition: transform 0.3s ease;
+}
+.overlay:hover {
+  transform: scale(1.02);
+}
+
+h1, h2 {
+  color: #FFC907;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.yellow {
+  background-color: #FFC907;
+  color: black;
+}
+
+.light {
+  background-color: #8BD1CB;
+  color: black;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.solution-blocks, .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.solution, .quote, .actions div {
+  flex: 1 1 300px;
+  background-color: #F5402C;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.contact {
+  background-color: #000f2e;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+  .solution-blocks, .actions {
+    flex-direction: column;
+  }
+}
